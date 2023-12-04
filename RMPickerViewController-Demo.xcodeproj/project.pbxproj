@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA0D3ABC1DE1E5DE00DD6DCB /* RMActionController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0D3AB91DE1E5A200DD6DCB /* RMActionController.framework */; };
-		CA0D3ABD1DE1E5F100DD6DCB /* RMActionController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA0D3AB91DE1E5A200DD6DCB /* RMActionController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A39A4E992B1E2072000FE56A /* RMActionController.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39A4E982B1E2072000FE56A /* RMActionController.xcframework */; };
+		A39A4E9C2B1E207D000FE56A /* RMActionController.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39A4E982B1E2072000FE56A /* RMActionController.xcframework */; };
 		CA0D3ABF1DE1E60A00DD6DCB /* RMPickerViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA2799651DC6B5910077712D /* RMPickerViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA0D3AC01DE1E60F00DD6DCB /* RMActionController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA0D3AB91DE1E5A200DD6DCB /* RMActionController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA1E624B1A24D6840025A6A6 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1E624A1A24D6840025A6A6 /* Launch Screen.xib */; };
@@ -80,13 +80,6 @@
 			remoteGlobalIDString = CA5EFC281D8EAC5A0020C8A8;
 			remoteInfo = RMActionController;
 		};
-		CA0D3ABA1DE1E5D200DD6DCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CA0D3AA51DE1E5A200DD6DCB /* RMActionController-Demo.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = CA5EFC271D8EAC5A0020C8A8;
-			remoteInfo = RMActionController;
-		};
 		CA27996A1DC6B5910077712D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CABBCD1E189520D50006213F /* Project object */;
@@ -143,7 +136,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CA0D3ABD1DE1E5F100DD6DCB /* RMActionController.framework in Embed Frameworks */,
 				CA27996D1DC6B5910077712D /* RMPickerViewController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -163,6 +155,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A39A4E982B1E2072000FE56A /* RMActionController.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RMActionController.xcframework; path = Carthage/Build/RMActionController.xcframework; sourceTree = "<group>"; };
 		CA0D3AA51DE1E5A200DD6DCB /* RMActionController-Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "RMActionController-Demo.xcodeproj"; sourceTree = "<group>"; };
 		CA1E624A1A24D6840025A6A6 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		CA2799651DC6B5910077712D /* RMPickerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMPickerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,7 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0D3ABC1DE1E5DE00DD6DCB /* RMActionController.framework in Frameworks */,
+				A39A4E992B1E2072000FE56A /* RMActionController.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39A4E9C2B1E207D000FE56A /* RMActionController.xcframework in Frameworks */,
 				CA27996C1DC6B5910077712D /* RMPickerViewController.framework in Frameworks */,
 				CABBCD2C189520D50006213F /* CoreGraphics.framework in Frameworks */,
 				CABBCD2E189520D50006213F /* UIKit.framework in Frameworks */,
@@ -341,6 +335,7 @@
 		CABBCD28189520D50006213F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A39A4E982B1E2072000FE56A /* RMActionController.xcframework */,
 				CABBCD29189520D50006213F /* Foundation.framework */,
 				CABBCD2B189520D50006213F /* CoreGraphics.framework */,
 				CABBCD2D189520D50006213F /* UIKit.framework */,
@@ -416,7 +411,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CA0D3ABB1DE1E5D200DD6DCB /* PBXTargetDependency */,
 			);
 			name = RMPickerViewController;
 			productName = RMPickerViewController;
@@ -693,11 +687,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CA0D3ABB1DE1E5D200DD6DCB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RMActionController;
-			targetProxy = CA0D3ABA1DE1E5D200DD6DCB /* PBXContainerItemProxy */;
-		};
 		CA27996B1DC6B5910077712D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CA2799641DC6B5910077712D /* RMPickerViewController */;
@@ -765,7 +754,12 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = RMPickerViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.cooperrs.RMPickerViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -797,7 +791,12 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = RMPickerViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = de.cooperrs.RMPickerViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -817,7 +816,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "RMPickerViewController-SwiftDemo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.RMPickerViewController-SwiftDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -837,7 +839,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "RMPickerViewController-SwiftDemo/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.RMPickerViewController-SwiftDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -856,7 +861,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "RMPickerViewController-Demo-Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.RMPickerViewController-Demo-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -875,7 +884,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "RMPickerViewController-Demo-Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.RMPickerViewController-Demo-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -978,7 +991,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -991,7 +1005,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RMPickerViewController-Demo/RMPickerViewController-Demo-Prefix.pch";
 				INFOPLIST_FILE = "RMPickerViewController-Demo/RMPickerViewController-Demo-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1007,7 +1025,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RMPickerViewController-Demo/RMPickerViewController-Demo-Prefix.pch";
 				INFOPLIST_FILE = "RMPickerViewController-Demo/RMPickerViewController-Demo-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1025,7 +1047,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "RMPickerViewController-DemoExtension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.RMPickerViewController-Demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1040,7 +1066,11 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "RMPickerViewController-DemoExtension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.RMPickerViewController-Demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
